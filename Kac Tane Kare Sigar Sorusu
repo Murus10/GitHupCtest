@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+ 
+ int kare(int x );
+ int main(){
+     int x;
+     printf("KACA KACLIK KAC NOKTA VAR X VE Y EKSINDE ");
+     scanf("%d",&x);
+     printf("sonuc ; %d",kare(x));
+ }
+ int kare(int x ){
+     if(x==1)
+     return 1;
+     return kare(x-1)*4+1;
+ }
+ 
