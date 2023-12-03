@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+                         
+   int main()
+{    	   	int i ,j ,p
+          for(i=1;i<=10;i++){
+  	   		   for(j=1;j<=i;j++)
+   {       	   
+          int nf=1;
+	   		 	for(p=1;p<=i;p++)
+             nf=nf*p;
+	   		 	int kf=1;
+         for(p=1;p<=j;p++) 
+             kf=kf*p;
+  		  int nkf=1;
+         for(p=1;p<=i-j;p++)         
+        nkf=nkf*p;
+  	   		  printf("%d",nf/(kf*nkf));	 	
+				
+         }
+																printf("\n");
+						}
+          	   	
+	
+          	   	return 0;
+														}
+    
