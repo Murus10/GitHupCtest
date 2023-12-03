@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+
+      	                              
+							int faktoriyel(int x);
+							int faktoriyel1(int y);
+							int faktoriyel2(int z);
+							int kombinasyon(int x ,int y,int z);
+							int permutasyon(int x, int z);
+							
+							int main()
+               {
+								int x,y;
+							  int z;
+								printf(" (N,R) olmak uzere n ve r sayilarini girin :");
+								scanf("%d%d",&x,&y);
+					      z=x-y;
+					  		printf("Girilen sayinin kombinasyonu = %d\n",kombinasyon(x,y,z));
+								printf("Girilen sayinin permutasyonu = %d\n",permutasyon(x,z));
+					
+								}
+	
+								int faktoriyel(int x )
+								{  //şöyle bişey düşün denklemde sadece x varsa bide y tanımlamsını isteyemezsin y e özel yapcan bide ikiside varsa yaparsın anca
+							   if(x==0) return 1 ;
+							   return x*faktoriyel(x-1);
+								}
+
+							int faktoriyel1(int y )
+								{
+								 if(y==0) return 1 ;
+							   return y*faktoriyel(y-1);
+							
+								}
+								int faktoriyel2(int z )
+								{
+								 if(z==0) return 1 ;
+							   return z*faktoriyel(z-1);
+								}
+		
+               int kombinasyon(int x ,int y,int z )
+						 { 
+              	return faktoriyel(x)/(faktoriyel1(y)*faktoriyel2(z));
+      	
+						}
+                int permutasyon(int x ,int z) 
+							{ 
+              	return faktoriyel(x)/(faktoriyel(z));
+             }
+		  				
+						
