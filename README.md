@@ -35,6 +35,8 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=murus10&show_icons=true&locale=en" alt="murus10" /></p>
 
+![snake gif](https://github.com/Murus10/Murus10/blob/output/github-contribution-grid-snake.gif)
+
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=murus10&" alt="murus10" /></p>
 
 
