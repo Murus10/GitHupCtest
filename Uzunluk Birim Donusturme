@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+  int main() {
+    int x, y;
+    float sayi;
+    printf("Sayi giriniz ");
+    scanf("%f", & sayi);
+
+    printf("suanki birimi  birimi giriniz = ");
+    printf("\n 1 = km \n 2 = hm\n 3 = dam\n 4 = m\n 5 = cm\n 6 = dm\n 7 = mm ");
+    scanf("%d", & x);
+
+    printf("Donusturmek istedginiz birimi giriniz = ");
+    printf("\n 1 = km \n 2 = hm\n 3 = dam\n 4 = m\n 5 = cm\n 6 = dm\n 7 = mm ");
+    scanf("%d", & y);
+
+    switch (x) {
+    case 1: {
+
+      if (y == 1) printf("%0.3f km dir", sayi);
+      if (y == 2) printf("%0.3f hm dir", sayi * 10);
+      if (y == 3) printf("%0.3f dam dir", sayi * 100);
+      if (y == 4) printf("%0.3f m dir", sayi * 1000);
+      if (y == 5) printf("%0.3f cm dir", sayi * 10000);
+      if (y == 6) printf("%0.3f dm dir", sayi * 100000);
+      if (y == 7) printf("%0.3f mm dir", sayi * 1000000);
+      break;
+
+    }
+    case 2: {
+
+      if (y == 2) printf("%0.3f km dir", sayi / 10);
+      if (y == 2) printf("%0.3f hm dir", sayi);
+      if (y == 3) printf("%0.3f dam dir", sayi * 10);
+      if (y == 4) printf("%0.3f m dir", sayi * 100);
+      if (y == 5) printf("%0.3f cm dir", sayi * 1000);
+      if (y == 6) printf("%0.3f dm dir", sayi * 10000);
+      if (y == 7) printf("%0.3f mm dir", sayi * 100000);
+      break;
+    }
+
+    case 3: {
+
+      if (y == 3) printf("%0.3f km dir", sayi / 100);
+      if (y == 2) printf("%0.3f hm dir", sayi / 10);
+      if (y == 3) printf("%0.3f dam dir", sayi);
+      if (y == 4) printf("%0.3f m dir", sayi * 10);
+      if (y == 5) printf("%0.3f cm dir", sayi * 100);
+      if (y == 6) printf("%0.3f dm dir", sayi * 1000);
+      if (y == 7) printf("%0.3f mm dir", sayi * 10000);
+      break;
+    }
+    case 4: {
+
+      if (y == 4) printf("%0.3f km dir", sayi / 1000);
+      if (y == 2) printf("%0.3f hm dir", sayi / 100);
+      if (y == 3) printf("%0.3f dam dir", sayi / 10);
+      if (y == 4) printf("%0.3f m dir", sayi);
+      if (y == 5) printf("%0.3f cm dir", sayi * 10);
+      if (y == 6) printf("%0.3f dm dir", sayi * 100);
+      if (y == 7) printf("%0.3f mm dir", sayi * 1000);
+      break;
+    }
+    case 5: {
+
+      if (y == 5) printf("%0.3f km dir", sayi / 10000);
+      if (y == 2) printf("%0.3f hm dir", sayi / 1000);
+      if (y == 3) printf("%0.3f dam dir", sayi / 100);
+      if (y == 4) printf("%0.3f m dir", sayi / 10);
+      if (y == 5) printf("%0.3f cm dir", sayi);
+      if (y == 6) printf("%0.3f dm dir", sayi * 10);
+      if (y == 7) printf("%0.3f mm dir", sayi * 100);
+      break;
+    }
+
+    case 6: {
+
+      if (y == 6) printf("%0.3f km dir", sayi / 100000);
+      if (y == 2) printf("%0.3f hm dir", sayi / 10000);
+      if (y == 3) printf("%0.3f dam dir", sayi / 1000);
+      if (y == 4) printf("%0.3f m dir", sayi / 100);
+      if (y == 5) printf("%0.3f cm dir", sayi / 10);
+      if (y == 6) printf("%0.3f dm dir", sayi);
+      if (y == 7) printf("%0.3f mm dir", sayi * 10);
+      break;
+    }
+
+    case 7: {
+
+      if (y == 7) printf("%0.3f km dir", sayi / 1000000);
+      if (y == 2) printf("%0.3f hm dir", sayi / 100000);
+      if (y == 3) printf("%0.3f dam dir", sayi / 10000);
+      if (y == 4) printf("%0.3f m dir", sayi / 1000);
+      if (y == 5) printf("%0.3f cm dir", sayi / 100);
+      if (y == 6) printf("%0.3f dm dir", sayi / 10);
+      if (y == 7) printf("%0.3f mm dir", sayi);
+      break;
+    }
+    default:
+      printf("Hatali islem yaptiniz");
+      break;
+
+    }
+
+    return 0;
+  }
