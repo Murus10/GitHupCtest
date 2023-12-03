@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+	 int basamaksayisi(int sayi);
+	 int basamaklar(int sayi, int z);
+	 int main() {
+	   int sayi, z;
+	   printf("Sayiyi giriniz :\n");
+	   scanf("%d", & sayi);
+	   printf(" basamak sayisi %d\n", basamaksayisi(sayi));
+
+	   z = basamaksayisi(sayi);
+	   if (basamaklar(sayi, z) == sayi)
+	     printf("ARRMSTRONTUR");
+	   else printf("degildir");
+
+	   return 0;
+	 }
+
+	 int basamaksayisi(int sayi) {
+	   int s = 0;
+	   int rakam;
+	   while (sayi > 0) {
+	     s++;
+	     rakam = sayi % 10;
+	     sayi = sayi / 10;
+	   }
+	   return s;
+	 }
+
+	 int basamaklar(int sayi, int z) {
+	   int rakam, x, y;
+	   y = 0;
+	   while (sayi > 0) {
+
+	     rakam = sayi % 10;
+	     x = pow(rakam, z);
+	     y = y + x;
+	     sayi = sayi / 10;
+	   }
+	   return y;
+	 }
