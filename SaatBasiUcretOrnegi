@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+int main() {
+	char ad ;
+	int saat;
+	int para;
+	printf("Adinizin bas harfi nedir? %c",ad);
+	scanf("%c",&ad);
+	printf("Kac saat calistiniz? %d",saat);
+	scanf("%d",&saat);
+	
+	
+	if(saat<=10){
+		para = saat*5;
+		printf("\n %c nin alacagi ucret % dir. ",ad,para);
+	}
+	else if(saat>10  ||  saat<=20){
+		para= 50 + (saat-10)*3;
+		printf("\n %c nin alacagi ucret % 2dir. ",ad,para);
+	}
+	 else{
+	 	para=80+ (saat-20)*2;
+	 			printf("\n %c nin alacagi ucret % dir. ",ad,para);
+		}
+	
+	//10 A KADAR 5TL SAAT BAŞI 10 İLE 20 ARASI 3 VS BURDA 10 A KADAR DİYİNCE 10 U DAHİL ETTİK 10 İLE 20 ARSINDA DA 20 DAHİL ÖNEMLİ!
+	return 0;
+}
