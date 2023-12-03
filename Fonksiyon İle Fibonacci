@@ -4,22 +4,17 @@
 #include <math.h>
 #include <time.h>
 #include <conio.h>
-
-
-                                      
-                    
-                   int main() {
-                   int t1 = 0, t2 = 1, x = 0, n; //x 3.terim yani fn=fn-1+fn-2 (fn x oluyor)
-                    printf("Enter a positive number: ");
-                   scanf("%d", &n);                  
-                    printf("Fibonacci Series: %d, %d, ", t1, t2);
-                    x = t1 + t2;
-                     while (x <= n) {
-                       printf("%d, ", x);
-                      t1 = t2;
-                      t2 = x;
-                      x = t1 + t2;
-                       }
-                          return 0;
-                        }
-     
+int main() {
+  int t1 = 0, t2 = 1, x = 0, n; //x 3.terim yani fn=fn-1+fn-2 (fn x oluyor)
+  printf("Enter a positive number: ");
+  scanf("%d", & n);
+  printf("Fibonacci Series: %d, %d, ", t1, t2);
+  x = t1 + t2;
+  while (x <= n) {
+    printf("%d, ", x);
+    t1 = t2;
+    t2 = x;
+    x = t1 + t2;
+  }
+  return 0;
+}
