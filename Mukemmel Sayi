@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+int main() {
+  int x, i, mukemmel;
+
+  printf("sayi giriniz");
+  scanf("%d", & x);
+  for (i = 1; i <= x; i++) {
+    if (x % i == 0)
+      mukemmel += i;
+  }
+  if (mukemmel / 2 == x) printf("mukemmel sayidir");
+  else printf("degildir");
+  return 0;
+}
