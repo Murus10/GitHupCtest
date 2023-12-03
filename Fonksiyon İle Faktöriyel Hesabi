@@ -4,26 +4,21 @@
 #include <math.h>
 #include <time.h>
 #include <conio.h>
+int function (int x);
+int main() {
+  int x; //X MAİNDE TANIMLADIK AMA FONKDADA TEKRARDAN TANIMLADIK BU ÖNEMLİ 
+  printf(" Sayi gir ;");
+  scanf("%d", & x);
+  printf(" 5 fak  + Bu sayinin faktoriyeli = %d ", function (x) + function (5));
+  //İSLEMLER SANA KALMIS function(x)+function(5)); YERİNE funciton(funciton(x)) gibi girilen sayinin facının faki
 
+}
+int
+function (int x) {
+  int sonuc = 1;
+  int i; //sonuc=1 diyoz ilk 0 desek 0 ile çarp çarp yine 0 dı
+  for (i = 1; i <= x; i++)
+    sonuc *= i;
 
-
-// 12 ) FONK KULLANIMI İLE FAKTÖRİYEL HESABİ
-    
-						int function(int x);
-						int main(){
-							int x ;                  //X MAİNDE TANIMLADIK AMA FONKDADA TEKRARDAN TANIMLADIK BU ÖNEMLİ 
-							printf (" Sayi gir ;");   
-							scanf("%d",&x);
-							printf(" 5 fak  + Bu sayinin faktoriyeli = %d ",function(x)+function(5));
-							//İSLEMLER SANA KALMIS function(x)+function(5)); YERİNE funciton(funciton(x)) gibi girilen sayinin facının faki
-	
-						}
-						int function(int x){
-							int sonuc=1;
-							int i;               //sonuc=1 diyoz ilk 0 desek 0 ile çarp çarp yine 0 dı
-							for(i=1;i<=x;i++)
-							 sonuc*=i;
-
-						return sonuc;
-					}
-					
+  return sonuc;
+}
