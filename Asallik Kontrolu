@@ -5,25 +5,23 @@
 #include <time.h>
 #include <conio.h>
 
-int main(){
-	int a = 1 ;
-	int b ;
-	scanf("%d",&b);
-	int flag=0;
-	
-	while(a<b-1){  //KENDİSİNE ZATEN BÖLÜNÜYOR 1 EKSİĞİNE KADAR BAKTIK ZATEN TEK SAYIYA BAKIYOZ ONA GÖRE FLAG İLE BİTİRDİK
-		a++;
-		if(b%a==0){
-			flag=1;
-			break;
-		}
-	}
-	if (flag==0)
-	        printf("sayi Asal");
-	else
-	        printf("sayi Asal Degil");
-										
-	
+int main() {
+  int a = 1;
+  int b;
+  scanf("%d", & b);
+  int flag = 0;
 
-	return 0 ;
+  while (a < b - 1) { //KENDİSİNE ZATEN BÖLÜNÜYOR 1 EKSİĞİNE KADAR BAKTIK ZATEN TEK SAYIYA BAKIYOZ ONA GÖRE FLAG İLE BİTİRDİK
+    a++;
+    if (b % a == 0) {
+      flag = 1;
+      break;
+    }
+  }
+  if (flag == 0)
+    printf("sayi Asal");
+  else
+    printf("sayi Asal Degil");
+
+  return 0;
 }
