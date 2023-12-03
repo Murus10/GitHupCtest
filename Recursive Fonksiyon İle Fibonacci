@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+
+													                  
+												void func(int x);
+												int main (){
+													int x;
+													printf("Sayi gir");
+													scanf("%d",&x);
+													func(x);
+													
+												}
+													void func(int x){
+														if(x==0 || x==1)
+														   printf("1");
+														else   printf("%d",func(x-1)+func(x-2));
+																 //RETURN DE FUNC=.. YAPAMAZSIN
+														
+													}											                  
+     
