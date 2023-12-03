@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+  int main() {
+    int i, n, m, flag = 1;
+    printf("bir sayi girin ");
+    scanf("%d", & n);
+    m = pow(2, n) - 1;
+    printf("%d\n", m);
+
+    for (i = 2; i <= sqrt(m); i++) {
+      if (m % i == 0) {
+        flag = 0;
+        break;
+      }
+    }
+    if (m <= 1)
+      flag = 0;
+    if (flag == 1) {
+      printf("%d is a prime number", m);
+    } else {
+      printf("%d is not a prime number", m);
+    }
+
+    return 0;
+  }
