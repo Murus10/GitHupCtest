@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+#include <time.h>
+#include <conio.h>
+
+    int main() {
+      int sayi, tahmin, s = 0;
+      srand(time(NULL));
+      sayi = rand() % 99 + 1;
+
+      do {
+        printf("Tahmininiz : ");
+        scanf("%d", & tahmin);
+        s++;
+        if (tahmin > sayi) printf("Daha kucuk sayi giriniz \n");
+        if (tahmin < sayi) printf("Daha buyuk sayi giriniz \n");
+        printf("\n");
+      } while (tahmin != sayi);
+      printf("%d tahminde bulundu ", s);
+
+    }
