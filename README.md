@@ -1,3 +1,7 @@
+C EXAMPLES FOR BEGİNNERS 
+
+
+
 [![MasterHead](https://academy.avast.com/hubfs/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png)
 <h1 align="center">Hİ 👋, I^m Mehmet Uruş</h1>![resim](https://github.com/Murus10/C_Examples_Murus10/assets/96293957/7121987e-b447-481e-b9f9-1a8fddfe4bdf)
 
