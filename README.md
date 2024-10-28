@@ -5,9 +5,9 @@ C EXAMPLES FOR BEGİNNERS
 [![MasterHead](https://academy.avast.com/hubfs/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png)
 <h1 align="center">Hİ 👋, I^m Mehmet Uruş</h1>![resim](https://github.com/Murus10/C_Examples_Murus10/assets/96293957/7121987e-b447-481e-b9f9-1a8fddfe4bdf)
 
-<h3 align="center">Bilgisayar Mühendisi Erciyes Üniversitesi/Kayseri/Türkiye</h3>
+<h3 align="center">Software Developer</h3>
 
-- 🔭 I’m Working On **Coding**
+- 🔭 I’m Working On **Software**
 
 - 🌱 I’m Looking For **Courses , Works , Job etc**
 
@@ -21,9 +21,10 @@ C EXAMPLES FOR BEGİNNERS
 
 - 📫 Contact To Me **mehmeturus73@gmail.com**
 
+- 📫 Contact To Me **www.linkedin.com/in/mehmet-u-5b509a235**
+
 - 📄My Experiences [https://github.com/Murus10](https://github.com/Murus10)
 
-- ⚡ Fun fact **I think I am sympathetic :)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
